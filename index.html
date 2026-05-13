@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogg om Psykologi och Neurovetenskap</title>
+<meta name="description" content="Vetenskaplig blogg om psykologi och neurovetenskap på svenska. Artiklar om hjärnans funktion, beteende, mental hälsa och neuroforskning av Juan Moisés de la Serna.">
+<meta name="keywords" content="psykologi, neurovetenskap, hjärna, mental hälsa, beteendevetenskap, neurobiologi, forskning">
+<meta name="author" content="Juan Moisés de la Serna">
+<meta property="og:title" content="Blogg om Psykologi och Neurovetenskap">
+<meta property="og:description" content="Vetenskaplig blogg om psykologi och neurovetenskap på svenska.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://juanmoisesd.github.io/science-blog-swe/">
+<link rel="canonical" href="https://juanmoisesd.github.io/science-blog-swe/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blogg om Psykologi och Neurovetenskap",
+  "description": "Vetenskaplig blogg om psykologi och neurovetenskap på svenska",
+  "url": "https://juanmoisesd.github.io/science-blog-swe/",
+  "inLanguage": "sv",
+  "author": { "@type": "Person", "name": "Juan Moisés de la Serna", "url": "https://juanmoisesdelaserna.es" }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    font-family: 'Linux Libertine', Georgia, serif;
+    background: #f6f6f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: #0645ad;
+    color: white;
+    padding: 0;
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .site-title {
+    font-size: 1.7em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .site-subtitle {
+    font-size: 0.95em;
+    opacity: 0.85;
+    margin-top: 2px;
+  }
+  nav {
+    background: #054096;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 0.95em;
+    display: block;
+    transition: background 0.2s;
+  }
+  nav a:hover { background: rgba(255,255,255,0.15); color: white; }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 24px;
+  }
+  .intro-box {
+    background: white;
+    border: 1px solid #a7d7f9;
+    border-left: 4px solid #0645ad;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    border-radius: 2px;
+  }
+  .intro-box h2 {
+    margin: 0 0 10px;
+    font-size: 1.15em;
+    color: #0645ad;
+    border: none;
+  }
+  .intro-box p { margin: 0; line-height: 1.6; }
+  h1.section-title {
+    font-size: 1.4em;
+    border-bottom: 2px solid #0645ad;
+    padding-bottom: 8px;
+    margin: 0 0 24px;
+    color: #333;
+  }
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .article-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-top: 3px solid #0645ad;
+    border-radius: 3px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .article-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+  }
+  .article-card .tag {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #0645ad;
+    font-size: 0.78em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+  }
+  .article-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.05em;
+    line-height: 1.35;
+  }
+  .article-card h3 a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+  .article-card h3 a:hover { text-decoration: underline; }
+  .article-card p {
+    margin: 0 0 12px;
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+  }
+  .article-card .meta {
+    font-size: 0.82em;
+    color: #777;
+    font-family: sans-serif;
+  }
+  .stats-bar {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 14px 20px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    font-family: sans-serif;
+    font-size: 0.9em;
+  }
+  .stat-item strong { display: block; font-size: 1.4em; color: #0645ad; }
+  footer {
+    background: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 24px;
+    font-size: 0.88em;
+    margin-top: 40px;
+  }
+  footer a { color: #7ab3f0; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    .header-inner { flex-direction: column; align-items: flex-start; }
+    .article-grid { grid-template-columns: 1fr; }
+    .stats-bar { gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div>
+      <a class="site-title" href="index.html">🧠 Psykologi &amp; Neurovetenskap</a>
+      <div class="site-subtitle">Vetenskaplig blogg på svenska · av Juan Moisés de la Serna</div>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html">Hem</a>
+    <a href="#neurovetenskap">Neurovetenskap</a>
+    <a href="#psykologi">Psykologi</a>
+    <a href="#mental-halsa">Mental hälsa</a>
+    <a href="https://github.com/juanmoisesd/science-blog-swe" target="_blank">GitHub</a>
+    <a href="https://juanmoisesdelaserna.es" target="_blank">Om författaren</a>
+  </div>
+</nav>
+
+<main>
+  <div class="intro-box">
+    <h2>Välkommen till bloggen om psykologi och neurovetenskap</h2>
+    <p>Denna blogg publicerar vetenskapliga artiklar på svenska om hjärnans funktion, beteendepsykologi, mental hälsa och de senaste rönen inom neurovetenskap. Innehållet är baserat på peer-reviewed forskning och riktar sig till en bred publik som är intresserad av hjärna och sinne.</p>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item"><strong>10</strong> Artiklar</div>
+    <div class="stat-item"><strong>Svenska</strong> Språk</div>
+    <div class="stat-item"><strong>2026</strong> Senast uppdaterad</div>
+    <div class="stat-item"><strong>Öppen</strong> Tillgång</div>
+  </div>
+
+  <h1 class="section-title" id="neurovetenskap">🔬 Neurovetenskap</h1>
+  <div class="article-grid">
+
+    <div class="article-card">
+      <span class="tag">Neurovetenskap</span>
+      <h3><a href="dopamin-beloning-och-motivation.html">Dopamin: Belöning och Motivation</a></h3>
+      <p>Hur dopaminsystemet styr belöning, motivation och beslutsfattande. Vetenskaplig översikt av en av hjärnans viktigaste signalsubstanser.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
+    </div>
+
+    <div class="article-card">
+      <span class="tag">Neurovetenskap</span>
+      <h3><a href="neuroplasticitet-hjarnans-formaga-att-forandras.html">Neuroplasticitet: Hjärnans förmåga att förändras</a></h3>
+      <p>Hjärnan är inte statisk — den omformar sig ständigt. En genomgång av neuroplasticitetens mekanismer och vad det betyder för inlärning och rehabilitering.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 8 min läsning</div>
+    </div>
+
+    <div class="article-card">
+      <span class="tag">Neurovetenskap</span>
+      <h3><a href="sovets-betydelse-for-hjarnan.html">Sömnens betydelse för hjärnan</a></h3>
+      <p>Varför är sömn livsnödvändig? En djupdykning i sömnens neurobiologi: minnekonsolidering, glialt clearance och vad som händer när vi inte sover.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
+    </div>
+
+    <div class="article-card">
+      <span class="tag">Neurovetenskap</span>
+      <h3><a href="minne-och-inlarning-neurovetenskap.html">Minne och Inlärning: En neurovetenskap­lig översikt</a></h3>
+      <p>Hur bildas minnen? Från korttidsminne till långtidsminne — en vetenskaplig genomgång av hippokampus roll, LTP och minnes­konsolidering.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 8 min läsning</div>
+    </div>
+
+    <div class="article-card">
+      <span class="tag">Neurovetenskap</span>
+      <h3><a href="oxytocin-socialt-beteende-och-bindning.html">Oxytocin: Socialt beteende och bindning</a></h3>
+      <p>Oxytocin kallas ibland "kärlekshormonet" — men vad gör det egentligen? En vetenskaplig analys av oxytocins roll i bindning, förtroende och socialt beteende.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 6 min läsning</div>
+    </div>
+
+  </div>
+
+  <h1 class="section-title" id="psykologi">🧩 Psykologi</h1>
+  <div class="article-grid">
+
+    <div class="article-card">
+      <span class="tag">Psykologi</span>
+      <h3><a href="serotonin-humor-och-valmaende.html">Serotonin: Humör och välmående</a></h3>
+      <p>Serotonin är centralt för humör­reglering — men myten om "lyckans kemikalie" är mer komplex än så. En vetenskaplig granskning av serotoninets verkliga roll.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
+    </div>
+
+    <div class="article-card">
+      <span class="tag">Psykologi</span>
+      <h3><a href="meditation-och-hjarnan.html">Meditation och hjärnan</a></h3>
+      <p>Vad händer i hjärnan när vi mediterar? En genomgång av neuro­vetenskaplig forskning om meditationens effekter på hjärnstruktur, uppmärksamhet och välbefinnande.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
+    </div>
+
+    <div class="article-card">
+      <span class="tag">Psykologi</span>
+      <h3><a href="stress-kortisol-och-hjarnan.html">Stress, kortisol och hjärnan</a></h3>
+      <p>Kortisol är kroppens primära stresshormon — en dubbel­eggad svärd. Hur kronisk stress påverkar hippokampus, immunsystemet och mental hälsa.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
+    </div>
+
+  </div>
+
+  <h1 class="section-title" id="mental-halsa">💙 Mental hälsa</h1>
+  <div class="article-grid">
+
+    <div class="article-card">
+      <span class="tag">Mental hälsa</span>
+      <h3><a href="depression-neurobiologiska-mekanismer.html">Depression: Neurobiologiska mekanismer</a></h3>
+      <p>Depression är mer än "att vara ledsen". En vetenskaplig genomgång av de neurobiologiska mekanismerna bakom egentlig depression och moderna behandlingsmetoder.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 8 min läsning</div>
+    </div>
+
+    <div class="article-card">
+      <span class="tag">Mental hälsa</span>
+      <h3><a href="adhd-neurobiologisk-oversikt.html">ADHD: Neurobiologisk översikt</a></h3>
+      <p>ADHD är ett neuroutvecklingstillstånd med tydliga biologiska grunder. En evidensbaserad genomgång av hjärnstruktur, genetik och behandlingsstrategier.</p>
+      <div class="meta">📅 Maj 2026 · ⏱ 8 min läsning</div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>
+    <strong>Blogg om Psykologi och Neurovetenskap (Svenska)</strong><br>
+    Av <a href="https://juanmoisesdelaserna.es" target="_blank">Juan Moisés de la Serna</a> ·
+    Universidad Internacional de La Rioja (UNIR) ·
+    ORCID: <a href="https://orcid.org/0000-0002-8401-8018" target="_blank">0000-0002-8401-8018</a><br>
+    <a href="https://github.com/juanmoisesd/science-blog-swe" target="_blank">GitHub-arkiv</a> ·
+    Licensierad under <a href="LICENSE" target="_blank">MIT License</a> · 2026
+  </p>
+</footer>
+
+</body>
+</html>
