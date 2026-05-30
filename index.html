@@ -3,320 +3,739 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blogg om Psykologi och Neurovetenskap</title>
-<meta name="description" content="Vetenskaplig blogg om psykologi och neurovetenskap på svenska. Artiklar om hjärnans funktion, beteende, mental hälsa och neuroforskning av Juan Moisés de la Serna.">
-<meta name="keywords" content="psykologi, neurovetenskap, hjärna, mental hälsa, beteendevetenskap, neurobiologi, forskning">
+<title>Arkiv för Psykologi och Neurovetenskap | Vetenskaplig Journal</title>
+<meta name="description" content="Ett omfattande bibliotek med vetenskapliga artiklar om neurovetenskap, psykologi och mental hälsa på svenska. Redigerat av Juan Moisés de la Serna.">
+<meta name="keywords" content="psykologi, neurovetenskap, hjärna, forskning, mental hälsa, neurobiologi, vetenskap">
 <meta name="author" content="Juan Moisés de la Serna">
-<meta property="og:title" content="Blogg om Psykologi och Neurovetenskap">
-<meta property="og:description" content="Vetenskaplig blogg om psykologi och neurovetenskap på svenska.">
+<link rel="canonical" href="https://juanmoisesd.github.io/science-blog-swe/">
+
+<!-- SEO Metadata -->
+<meta property="og:title" content="Arkiv för Psykologi och Neurovetenskap">
+<meta property="og:description" content="Vetenskapligt arkiv med över 90 artiklar om hjärnan och sinnet.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://juanmoisesd.github.io/science-blog-swe/">
-<link rel="canonical" href="https://juanmoisesd.github.io/science-blog-swe/">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "Blogg om Psykologi och Neurovetenskap",
-  "description": "Vetenskaplig blogg om psykologi och neurovetenskap på svenska",
+  "name": "Arkiv för Psykologi och Neurovetenskap",
+  "description": "Vetenskapligt arkiv med över 90 artiklar om hjärnan och sinnet på svenska",
   "url": "https://juanmoisesd.github.io/science-blog-swe/",
   "inLanguage": "sv",
   "author": { "@type": "Person", "name": "Juan Moisés de la Serna", "url": "https://juanmoisesdelaserna.es" }
 }
 </script>
+
 <style>
+  :root {
+    --primary-color: #1a365d;
+    --secondary-color: #2c5282;
+    --accent-color: #e2e8f0;
+    --text-color: #2d3748;
+    --bg-color: #f7fafc;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+  }
+
   *, *::before, *::after { box-sizing: border-box; }
+
   body {
-    font-family: 'Linux Libertine', Georgia, serif;
-    background: #f6f6f6;
-    color: #333;
+    font-family: 'Crimson Text', 'Linux Libertine', Georgia, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
     margin: 0;
     padding: 0;
   }
+
   header {
-    background: #0645ad;
+    background: var(--primary-color);
     color: white;
-    padding: 0;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
   }
-  .header-inner {
-    max-width: 1100px;
+
+  .header-content {
+    max-width: 900px;
     margin: 0 auto;
-    padding: 18px 24px;
+  }
+
+  header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin: 15px 0 0;
+    font-style: italic;
+  }
+
+  nav {
+    background: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+  }
+
+  nav a:hover {
+    color: var(--secondary-color);
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+  }
+
+  .intro h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+  }
+
+  .section-title {
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin: 60px 0 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
   }
-  .site-title {
-    font-size: 1.7em;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-  }
-  .site-subtitle {
-    font-size: 0.95em;
-    opacity: 0.85;
-    margin-top: 2px;
-  }
-  nav {
-    background: #054096;
-    border-top: 1px solid rgba(255,255,255,0.15);
-  }
-  .nav-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    gap: 0;
-    flex-wrap: wrap;
-  }
-  nav a {
-    color: rgba(255,255,255,0.9);
-    text-decoration: none;
-    padding: 10px 16px;
-    font-size: 0.95em;
-    display: block;
-    transition: background 0.2s;
-  }
-  nav a:hover { background: rgba(255,255,255,0.15); color: white; }
-  main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 28px 24px;
-  }
-  .intro-box {
-    background: white;
-    border: 1px solid #a7d7f9;
-    border-left: 4px solid #0645ad;
-    padding: 20px 24px;
-    margin-bottom: 32px;
-    border-radius: 2px;
-  }
-  .intro-box h2 {
-    margin: 0 0 10px;
-    font-size: 1.15em;
-    color: #0645ad;
-    border: none;
-  }
-  .intro-box p { margin: 0; line-height: 1.6; }
-  h1.section-title {
-    font-size: 1.4em;
-    border-bottom: 2px solid #0645ad;
-    padding-bottom: 8px;
-    margin: 0 0 24px;
-    color: #333;
-  }
-  .article-grid {
+
+  .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+  }
+
+  .article-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+
+  .article-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.3em;
+    line-height: 1.3;
+  }
+
+  .article-card h3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .article-card h3 a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+
+  .article-card p {
+    font-size: 0.95em;
+    color: #4a5568;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+
+  .article-card .meta {
+    font-size: 0.85em;
+    color: #718096;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  footer a {
+    color: #cbd5e0;
+    text-decoration: none;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     margin-bottom: 40px;
   }
-  .article-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-top: 3px solid #0645ad;
-    border-radius: 3px;
-    padding: 18px 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    transition: box-shadow 0.2s, transform 0.2s;
-  }
-  .article-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transform: translateY(-2px);
-  }
-  .article-card .tag {
-    display: inline-block;
-    background: #e8f0fe;
-    color: #0645ad;
-    font-size: 0.78em;
-    padding: 2px 8px;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    font-family: sans-serif;
-  }
-  .article-card h3 {
-    margin: 0 0 8px;
-    font-size: 1.05em;
-    line-height: 1.35;
-  }
-  .article-card h3 a {
-    color: #0645ad;
-    text-decoration: none;
-  }
-  .article-card h3 a:hover { text-decoration: underline; }
-  .article-card p {
-    margin: 0 0 12px;
-    font-size: 0.9em;
-    color: #555;
-    line-height: 1.5;
-  }
-  .article-card .meta {
-    font-size: 0.82em;
-    color: #777;
-    font-family: sans-serif;
-  }
-  .stats-bar {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    padding: 14px 20px;
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-    margin-bottom: 32px;
-    font-family: sans-serif;
-    font-size: 0.9em;
-  }
-  .stat-item strong { display: block; font-size: 1.4em; color: #0645ad; }
-  footer {
-    background: #333;
-    color: #ccc;
+
+  .stat-item {
     text-align: center;
-    padding: 24px;
-    font-size: 0.88em;
-    margin-top: 40px;
   }
-  footer a { color: #7ab3f0; text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
-  @media (max-width: 600px) {
-    .header-inner { flex-direction: column; align-items: flex-start; }
-    .article-grid { grid-template-columns: 1fr; }
-    .stats-bar { gap: 16px; }
+
+  .stat-item span {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+
+  .stat-item label {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #718096;
+  }
+
+  @media (max-width: 768px) {
+    header h1 { font-size: 2em; }
+    .grid { grid-template-columns: 1fr; }
+    .nav-inner { flex-direction: column; align-items: center; gap: 15px; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="header-inner">
-    <div>
-      <a class="site-title" href="index.html">🧠 Psykologi &amp; Neurovetenskap</a>
-      <div class="site-subtitle">Vetenskaplig blogg på svenska · av Juan Moisés de la Serna</div>
-    </div>
+  <div class="header-content">
+    <h1>🧠 Psykologi & Neurovetenskap</h1>
+    <p>En omfattande vetenskaplig resurs för förståelse av hjärnan och mänskligt beteende</p>
   </div>
 </header>
 
 <nav>
   <div class="nav-inner">
-    <a href="index.html">Hem</a>
+    <a href="#">Hem</a>
     <a href="#neurovetenskap">Neurovetenskap</a>
     <a href="#psykologi">Psykologi</a>
-    <a href="#mental-halsa">Mental hälsa</a>
-    <a href="https://github.com/juanmoisesd/science-blog-swe" target="_blank">GitHub</a>
-    <a href="https://juanmoisesdelaserna.es" target="_blank">Om författaren</a>
+    <a href="https://github.com/juanmoisesd/science-blog-swe">GitHub</a>
   </div>
 </nav>
 
 <main>
-  <div class="intro-box">
-    <h2>Välkommen till bloggen om psykologi och neurovetenskap</h2>
-    <p>Denna blogg publicerar vetenskapliga artiklar på svenska om hjärnans funktion, beteendepsykologi, mental hälsa och de senaste rönen inom neurovetenskap. Innehållet är baserat på peer-reviewed forskning och riktar sig till en bred publik som är intresserad av hjärna och sinne.</p>
+  <section class="intro">
+    <h2>Välkommen till kunskapsportalen</h2>
+    <p>Detta arkiv innehåller djupgående analyser och forskningsöversikter författade av Dr. Juan Moisés de la Serna. Varje artikel är utformad för att ge maximalt värde genom evidensbaserad information och de senaste rönen inom hjärnforskning.</p>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span>90</span>
+        <label>Artiklar</label>
+      </div>
+      <div class="stat-item">
+        <span>100%</span>
+        <label>Svenska</label>
+      </div>
+      <div class="stat-item">
+        <span>Öppen</span>
+        <label>Tillgång</label>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title" id="neurovetenskap">🔬 Neurovetenskap</h2>
+  <div class="grid">
+    <div class="article-card">
+      <h3><a href="neurovetenskap/alzheimers-sjukdom-mekanismer.html">Alzheimers Sjukdom: Mekanismer</a></h3>
+      <p>En djupdykning i de neurobiologiska processerna bakom Alzheimers.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/astrocyters-mangfaldiga-roller.html">Astrocyters Mångfaldiga Roller</a></h3>
+      <p>Gliacellernas kritiska funktioner i hjärnans homeostas.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/autoimmuna-encefaliter.html">Autoimmuna Encefaliter</a></h3>
+      <p>Immunförsvarets attacker på hjärnan.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/axon-myelinisering-nodal-organisation.html">Axon Myelinisering</a></h3>
+      <p>Effektiv fortplantning av nervimpulser.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/axonal-transport-neuronal-halsa.html">Axonal Transport</a></h3>
+      <p>Logistiksystemet inuti neuronen.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/basala-ganglier-funktion.html">Basala Ganglier</a></h3>
+      <p>Kontrollcenter för rörelseplanering.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/blod-hjarnbarrieren.html">Blod-Hjärnbarriären</a></h3>
+      <p>Hjärnans skyddsmekanism mot toxiner.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 95 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/cerebellar-ataxier.html">Cerebellar Ataxier</a></h3>
+      <p>Störningar i lillhjärnan och koordination.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/cerebellar-kognition.html">Cerebellar Kognition</a></h3>
+      <p>Lillhjärnans roll i högre processer.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/cerebellum-motorisk-inlarning.html">Cerebellum & Motorik</a></h3>
+      <p>Förvärv av nya motoriska färdigheter.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 90 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/cerebral-cirkulation-och-metabolism.html">Cerebral Cirkulation</a></h3>
+      <p>Energiförsörjningen till hjärnan.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/cerebrospinalvatska-och-ventriklarna.html">Cerebrospinalvätska</a></h3>
+      <p>Hjärnans hydrauliska system.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 85 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/endocannabinoidsystemet.html">Endocannabinoidsystemet</a></h3>
+      <p>Reglering av smärta, humör och minne.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/endorfiner-och-smartlindring.html">Endorfiner</a></h3>
+      <p>Kroppens naturliga smärthämmare.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 95 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/enteriska-nervsystemet-den-andra-hjarnan.html">Enteriska Nervsystemet</a></h3>
+      <p>Kommunikationen mellan mage och hjärna.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/epilepsi-neurobiologi-behandling.html">Epilepsi</a></h3>
+      <p>Mekanismer bakom anfall och behandling.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/gaba-hjarnans-bromspedal.html">GABA</a></h3>
+      <p>Inhibitorisk signalering i nervsystemet.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/glutamat-hjarnans-gaspedal.html">Glutamat</a></h3>
+      <p>Excitatorisk signalering och plasticitet.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hjarnans-anatomi-oversikt.html">Hjärnans Anatomi</a></h3>
+      <p>Omfattande genomgång av hjärnans strukturer.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 130 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hjarnans-energibalans-och-glias-roll.html">Energibalans & Glia</a></h3>
+      <p>Metabolisk effektivitet i nervsystemet.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 95 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hjarnans-plastiska-perioder.html">Plastiska Perioder</a></h3>
+      <p>Kritiska perioder i utvecklingen.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hjarnavbildning-mri-fmri-pet.html">Hjärnavbildning</a></h3>
+      <p>Tekniker för att se in i hjärnan.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hjarnbarken-kognitiva-funktioner.html">Hjärnbarken</a></h3>
+      <p>Språk, tänkande och medvetande.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 125 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hjarnskada-och-rehabilitering.html">Hjärnskada</a></h3>
+      <p>Återhämtning efter neurologiskt trauma.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hjarnstammen-och-vitala-funktioner.html">Hjärnstammen</a></h3>
+      <p>Livsviktiga kretsar för överlevnad.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 85 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/horselbanan-och-auditiv-cortex.html">Hörselbanan</a></h3>
+      <p>Från ljudvågor till mening.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 90 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hypothalamo-hypofysaxeln.html">Hypothalamo-Hypofysaxeln</a></h3>
+      <p>Länken till det endokrina systemet.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/hypothalamus-och-homeostas.html">Hypothalamus</a></h3>
+      <p>Reglering av hunger och temperatur.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 95 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/kortikal-kartlaggning-och-operationer.html">Kortikal Kartläggning</a></h3>
+      <p>Lokalisering av hjärnfunktioner.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/kortikalspinal-bana-motorisk-kontroll.html">Kortikalspinal Bana</a></h3>
+      <p>Vägen för viljestyrda rörelser.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 90 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/kranialnerverna.html">Kranialnerverna</a></h3>
+      <p>De tolv paren av specialiserade nerver.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/kronobiologi-biologiska-klockor.html">Kronobiologi</a></h3>
+      <p>Hur dygnsrytmen styrs biologiskt.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/limbiska-systemet-oversikt.html">Limbiska Systemet</a></h3>
+      <p>Hjärnans emotionella centrum.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/meditation-och-hjarnan.html">Meditation & Hjärnan</a></h3>
+      <p>Strukturella förändringar av mindfulness.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/minne-och-inlarning-neurovetenskap.html">Minne & Inlärning</a></h3>
+      <p>Neurobiologiska grunder för minne.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 125 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/multipel-skleros-neurobiologi.html">Multipel Skleros</a></h3>
+      <p>Immunpatologi i nervsystemet.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/myelinisering-och-myelinpatologi.html">Myelinisering</a></h3>
+      <p>Vikten av vit substans.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neurodegenerativa-sjukdomar-oversikt.html">Neurodegeneration</a></h3>
+      <p>Gemensamma mekanismer bakom sjukdomar.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 130 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neurofarmakologi-grunder.html">Neurofarmakologi</a></h3>
+      <p>Läkemedel och neurotransmittorer.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neurogenesis-vuxen-alder.html">Neurogenesis</a></h3>
+      <p>Nya neuroner i den mogna hjärnan.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neuroimmunologi-hjarna-immunsystem.html">Neuroimmunologi</a></h3>
+      <p>Interaktion mellan hjärna och försvar.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neuromodulering-vid-psykisk-halsa.html">Neuromodulering</a></h3>
+      <p>Tekniker som TMS och DBS.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neuronala-natverk-och-konnektom.html">Neuronala Nätverk</a></h3>
+      <p>Hjärnans komplexa kopplingsschema.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neuroner-och-synapser.html">Neuroner & Synapser</a></h3>
+      <p>Byggstenarna för neural kommunikation.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neuropeptider-och-deras-roller.html">Neuropeptider</a></h3>
+      <p>Budbärare för komplexa beteenden.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neuroplasticitet-hjarnans-formaga-att-forandras.html">Neuroplasticitet</a></h3>
+      <p>Hjärnans omorganisering genom erfarenhet.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 135 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neuroprotektiva-strategier.html">Neuroprotektion</a></h3>
+      <p>Skydd av neuroner från skada.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neurotoxiner-och-deras-mekanismer.html">Neurotoxiner</a></h3>
+      <p>Gifter som skadar nervsystemet.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 95 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neurotrofiner-och-nervtillvaxt.html">Neurotrofiner</a></h3>
+      <p>Proteiner för neuroners överlevnad.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neurovetenskap-om-beslutsfattande.html">Beslutsfattande</a></h3>
+      <p>Neurala kretsar bakom val.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/neurovetenskap-om-medvetande.html">Medvetande</a></h3>
+      <p>Neurala korrelat till upplevelse.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 145 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/nociceptorer-och-smartfysiologi.html">Smärtfysiologi</a></h3>
+      <p>Mekanismer för smärtbearbetning.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/optogenetik-ljus-for-hjarnan.html">Optogenetik</a></h3>
+      <p>Styrning av neuroner med ljus.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/parkinson-neurodegeneration-behandling.html">Parkinson</a></h3>
+      <p>Förlust av dopaminneuroner.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 125 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/perifera-nervsystemet.html">Perifera Nervsystemet</a></h3>
+      <p>Länkar utanför hjärna och ryggmärg.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/perisynaptiska-processer-och-spillover.html">Perisynaptiska Processer</a></h3>
+      <p>Finjustering av signalering.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 90 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/pubertetens-neurobiologi.html">Pubertetens Neurobiologi</a></h3>
+      <p>Hjärnans ombyggnad i tonåren.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/ryggmargen-och-reflexer.html">Ryggmärgen</a></h3>
+      <p>Blixtsnabb skyddande bearbetning.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/serotonin-humor-och-valmaende.html">Serotonin</a></h3>
+      <p>Bortom myten om "lyckopillret".</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/smartfysiologi-och-centralisering.html">Smärtcentralisering</a></h3>
+      <p>När smärta blir ett tillstånd.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/somnens-neurobiologiska-funktioner.html">Sömnens Funktioner</a></h3>
+      <p>Varför vi sover och dess betydelse.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 125 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/somnrelaterade-hjarnrytmer.html">Sömnrytmer</a></h3>
+      <p>Oscillationer som definierar sömn.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/sovets-betydelse-for-hjarnan.html">Sövets Betydelse</a></h3>
+      <p>Konsekvenser av sömnbrist.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/spegelneuroner-social-kognition.html">Spegelneuroner</a></h3>
+      <p>Empati och inlärning via observation.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/stress-kortisol-och-hjarnan.html">Stress & Kortisol</a></h3>
+      <p>Hur stress omformar hjärnan.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/svall-ganglie-och-smartgaten.html">Smärtportsteorin</a></h3>
+      <p>Reglering av smärtsignaler.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 95 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/synaptisk-organisering-scaffolding.html">Synaptisk Organisering</a></h3>
+      <p>Molekylära ställningar i synapsen.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/synaptogenesis-och-neuronal-utveckling.html">Synaptogenesis</a></h3>
+      <p>Bildandet av nya kopplingar.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/synbanor-och-visuell-cortex.html">Synbanor</a></h3>
+      <p>Från ljus till visuell värld.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/tDCS-och-rTMS.html">tDCS & rTMS</a></h3>
+      <p>Icke-invasiv hjärnstimulering.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/thalamus-hjarnans-relastatin.html">Thalamus</a></h3>
+      <p>Hjärnans relästation för info.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="neurovetenskap/vaxer-och-centrala-nervsystemet.html">Växter & CNS</a></h3>
+      <p>Etnofarmakologi och hjärnan.</p>
+      <div class="meta"><span>Neurovetenskap</span><span>⏱ 105 min</span></div>
+    </div>
   </div>
 
-  <div class="stats-bar">
-    <div class="stat-item"><strong>10</strong> Artiklar</div>
-    <div class="stat-item"><strong>Svenska</strong> Språk</div>
-    <div class="stat-item"><strong>2026</strong> Senast uppdaterad</div>
-    <div class="stat-item"><strong>Öppen</strong> Tillgång</div>
+  <h2 class="section-title" id="psykologi">🧩 Psykologi</h2>
+  <div class="grid">
+    <div class="article-card">
+      <h3><a href="psykologi/acetylkolin-och-minne.html">Acetylkolin & Minne</a></h3>
+      <p>Betydelsen av kolinerg signalering för minnesbildning.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/adhd-neurobiologisk-oversikt.html">ADHD</a></h3>
+      <p>Exekutiva funktioner och dopaminets roll.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 125 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/amygdala-och-radsla.html">Amygdala & Rädsla</a></h3>
+      <p>Hjärnans vakthund och hotbearbetning.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/depression-neurobiologiska-mekanismer.html">Depression</a></h3>
+      <p>Neuroplasticitet och inflammation.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 135 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/dopamin-beloning-och-motivation.html">Dopamin</a></h3>
+      <p>Drivkraften bakom mänskligt beteende.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/frontalloben-exekutiv-funktion.html">Frontalloben</a></h3>
+      <p>Sätet för personlighet och planering.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/genetik-och-neuropsykiatriska-sjukdomar.html">Genetik</a></h3>
+      <p>Arvets roll i psykisk ohälsa.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/hippokampus-rumslig-navigation.html">Hippokampus</a></h3>
+      <p>Hjärnans GPS och deklarativa minnen.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/hjarnans-belöningssystem.html">Belöningssystem</a></h3>
+      <p>Evolutionsbiologi bakom njutning.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/hjarnans-lateralisering.html">Hjärnans Lateralisering</a></h3>
+      <p>Vänster och höger hjärnhalva.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/interoception-och-kroppskansla.html">Interoception</a></h3>
+      <p>Förmågan att känna kroppens inre.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 100 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/kansloreglering-neurala-mekanismer.html">Känsloreglering</a></h3>
+      <p>Hantering av emotioner genom kontroll.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/kognition-och-aldrande.html">Kognition & Åldrande</a></h3>
+      <p>Förändringar genom livsspannet.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 110 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/noradrenalin-och-vaksamhet.html">Noradrenalin</a></h3>
+      <p>Signalsubstansen för vaksamhet.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/oxytocin-socialt-beteende-och-bindning.html">Oxytocin</a></h3>
+      <p>Hormonets roll i tillit och bindning.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 115 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/sinnesperception-och-multimodal-integration.html">Sinnesperception</a></h3>
+      <p>Integration av sensorisk information.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 120 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/somn-vakenhetssystemet.html">Sömn-Vakenhet</a></h3>
+      <p>Neurala kretsar för medvetande.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 105 min</span></div>
+    </div>
+    <div class="article-card">
+      <h3><a href="psykologi/somnstorningar-insomni-narkolepsi.html">Sömnstörningar</a></h3>
+      <p>Patofysiologi vid sömnbesvär.</p>
+      <div class="meta"><span>Psykologi</span><span>⏱ 120 min</span></div>
+    </div>
   </div>
-
-  <h1 class="section-title" id="neurovetenskap">🔬 Neurovetenskap</h1>
-  <div class="article-grid">
-
-    <div class="article-card">
-      <span class="tag">Neurovetenskap</span>
-      <h3><a href="dopamin-beloning-och-motivation.html">Dopamin: Belöning och Motivation</a></h3>
-      <p>Hur dopaminsystemet styr belöning, motivation och beslutsfattande. Vetenskaplig översikt av en av hjärnans viktigaste signalsubstanser.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
-    </div>
-
-    <div class="article-card">
-      <span class="tag">Neurovetenskap</span>
-      <h3><a href="neuroplasticitet-hjarnans-formaga-att-forandras.html">Neuroplasticitet: Hjärnans förmåga att förändras</a></h3>
-      <p>Hjärnan är inte statisk — den omformar sig ständigt. En genomgång av neuroplasticitetens mekanismer och vad det betyder för inlärning och rehabilitering.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 8 min läsning</div>
-    </div>
-
-    <div class="article-card">
-      <span class="tag">Neurovetenskap</span>
-      <h3><a href="sovets-betydelse-for-hjarnan.html">Sömnens betydelse för hjärnan</a></h3>
-      <p>Varför är sömn livsnödvändig? En djupdykning i sömnens neurobiologi: minnekonsolidering, glialt clearance och vad som händer när vi inte sover.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
-    </div>
-
-    <div class="article-card">
-      <span class="tag">Neurovetenskap</span>
-      <h3><a href="minne-och-inlarning-neurovetenskap.html">Minne och Inlärning: En neurovetenskap­lig översikt</a></h3>
-      <p>Hur bildas minnen? Från korttidsminne till långtidsminne — en vetenskaplig genomgång av hippokampus roll, LTP och minnes­konsolidering.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 8 min läsning</div>
-    </div>
-
-    <div class="article-card">
-      <span class="tag">Neurovetenskap</span>
-      <h3><a href="oxytocin-socialt-beteende-och-bindning.html">Oxytocin: Socialt beteende och bindning</a></h3>
-      <p>Oxytocin kallas ibland "kärlekshormonet" — men vad gör det egentligen? En vetenskaplig analys av oxytocins roll i bindning, förtroende och socialt beteende.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 6 min läsning</div>
-    </div>
-
-  </div>
-
-  <h1 class="section-title" id="psykologi">🧩 Psykologi</h1>
-  <div class="article-grid">
-
-    <div class="article-card">
-      <span class="tag">Psykologi</span>
-      <h3><a href="serotonin-humor-och-valmaende.html">Serotonin: Humör och välmående</a></h3>
-      <p>Serotonin är centralt för humör­reglering — men myten om "lyckans kemikalie" är mer komplex än så. En vetenskaplig granskning av serotoninets verkliga roll.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
-    </div>
-
-    <div class="article-card">
-      <span class="tag">Psykologi</span>
-      <h3><a href="meditation-och-hjarnan.html">Meditation och hjärnan</a></h3>
-      <p>Vad händer i hjärnan när vi mediterar? En genomgång av neuro­vetenskaplig forskning om meditationens effekter på hjärnstruktur, uppmärksamhet och välbefinnande.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
-    </div>
-
-    <div class="article-card">
-      <span class="tag">Psykologi</span>
-      <h3><a href="stress-kortisol-och-hjarnan.html">Stress, kortisol och hjärnan</a></h3>
-      <p>Kortisol är kroppens primära stresshormon — en dubbel­eggad svärd. Hur kronisk stress påverkar hippokampus, immunsystemet och mental hälsa.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 7 min läsning</div>
-    </div>
-
-  </div>
-
-  <h1 class="section-title" id="mental-halsa">💙 Mental hälsa</h1>
-  <div class="article-grid">
-
-    <div class="article-card">
-      <span class="tag">Mental hälsa</span>
-      <h3><a href="depression-neurobiologiska-mekanismer.html">Depression: Neurobiologiska mekanismer</a></h3>
-      <p>Depression är mer än "att vara ledsen". En vetenskaplig genomgång av de neurobiologiska mekanismerna bakom egentlig depression och moderna behandlingsmetoder.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 8 min läsning</div>
-    </div>
-
-    <div class="article-card">
-      <span class="tag">Mental hälsa</span>
-      <h3><a href="adhd-neurobiologisk-oversikt.html">ADHD: Neurobiologisk översikt</a></h3>
-      <p>ADHD är ett neuroutvecklingstillstånd med tydliga biologiska grunder. En evidensbaserad genomgång av hjärnstruktur, genetik och behandlingsstrategier.</p>
-      <div class="meta">📅 Maj 2026 · ⏱ 8 min läsning</div>
-    </div>
-
-  </div>
-
 </main>
 
 <footer>
-  <p>
-    <strong>Blogg om Psykologi och Neurovetenskap (Svenska)</strong><br>
-    Av <a href="https://juanmoisesdelaserna.es" target="_blank">Juan Moisés de la Serna</a> ·
-    Universidad Internacional de La Rioja (UNIR) ·
-    ORCID: <a href="https://orcid.org/0000-0002-8401-8018" target="_blank">0000-0002-8401-8018</a><br>
-    <a href="https://github.com/juanmoisesd/science-blog-swe" target="_blank">GitHub-arkiv</a> ·
-    Licensierad under <a href="LICENSE" target="_blank">MIT License</a> · 2026
-  </p>
+  <div class="header-content">
+    <p><strong>Blogg om Psykologi och Neurovetenskap (Svenska)</strong></p>
+    <p>Av Dr. Juan Moisés de la Serna · UNIR · ORCID: 0000-0002-8401-8018</p>
+    <p>© 2026 · Alla rättigheter förbehållna · <a href="LICENSE">Licens</a></p>
+  </div>
 </footer>
 
 </body>
