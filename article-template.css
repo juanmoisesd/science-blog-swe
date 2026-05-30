@@ -1,0 +1,155 @@
+/* Professional Article Template CSS */
+:root {
+  --article-primary: #1a365d;
+  --article-secondary: #2c5282;
+  --article-text: #2d3748;
+  --article-bg: #ffffff;
+  --article-sidebar: #f7fafc;
+  --article-border: #e2e8f0;
+}
+
+body {
+  font-family: 'Crimson Text', 'Linux Libertine', Georgia, serif;
+  color: var(--article-text);
+  line-height: 1.8;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 4px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 4px;
+  background: var(--article-primary);
+  width: 0%;
+}
+
+header.article-header {
+  background: var(--article-primary);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.article-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+article.main-content {
+  background: var(--article-bg);
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+aside.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar-box {
+  background: var(--article-sidebar);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--article-border);
+}
+
+.sidebar-box h4 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--article-primary);
+  padding-bottom: 8px;
+  font-size: 1.1em;
+  color: var(--article-primary);
+}
+
+.toc ol {
+  padding-left: 20px;
+  font-size: 0.9em;
+}
+
+.toc li {
+  margin-bottom: 8px;
+}
+
+.toc a {
+  color: var(--article-text);
+  text-decoration: none;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+  color: var(--article-primary);
+}
+
+h1 { font-size: 2.5em; margin-bottom: 20px; line-height: 1.2; }
+h2 { font-size: 1.8em; margin: 40px 0 20px; border-bottom: 1px solid var(--article-border); padding-bottom: 10px; color: var(--article-primary); }
+h3 { font-size: 1.4em; margin: 30px 0 15px; }
+
+p { margin-bottom: 1.5em; text-align: justify; }
+
+.bibliography {
+  font-size: 0.85em;
+  border-top: 2px solid var(--article-primary);
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+.bibliography ol {
+  list-style-type: decimal;
+}
+
+.glossary-item {
+  margin-bottom: 15px;
+}
+
+.glossary-item strong {
+  color: var(--article-primary);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--article-primary);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .article-container {
+    grid-template-columns: 1fr;
+  }
+  article.main-content {
+    padding: 30px;
+  }
+  aside.sidebar {
+    order: -1;
+  }
+}
